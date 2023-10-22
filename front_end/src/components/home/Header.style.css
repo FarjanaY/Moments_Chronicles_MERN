@@ -1,0 +1,23 @@
+.headerContainer {
+  width: 100%;
+}
+.headerText {
+  justify-content: center;
+  align-items: center;
+  font-family: var(--italicFont);
+}
+.headerTextlg {
+  text-align: center;
+  position: absolute;
+  top: 12%;
+  font-size: 3.7rem;
+  color: black;
+  font-weight: bolder;
+  text-shadow: 2px 2px 2px white;
+}
+.headerImg {
+  margin-top: 70px;
+  height: 450px;
+  object-fit: cover;
+  opacity: 0.8;
+}

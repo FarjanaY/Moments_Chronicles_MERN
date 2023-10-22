@@ -1,0 +1,97 @@
+.registerContainer {
+  height: calc(105vh - 22vh);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.2),
+      rgba(255, 255, 255, 0.2)
+    ),
+    url("../assets/images/post2.jpg");
+  background-size: cover;
+}
+.registerTitle {
+  font-size: 2.3rem;
+  margin: 10px;
+  text-align: center;
+  color: gray;
+}
+.registerForm {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.registerForm > label {
+  font-size: 0.8rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+  width: fit-content;
+  margin-top: 15px;
+  color: black;
+  font-family: "Varela Round", sans-serif;
+}
+.registerForm > input {
+  margin: 10px;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid gray;
+  width: fit-content;
+  padding: 5px 10px;
+  text-align: center;
+  color: black;
+}
+.registerForm > input::placeholder {
+  color: rgb(80, 79, 79);
+}
+.registerForm > input:focus {
+  outline: none;
+}
+
+.registerBtn,
+.registerLoginBtn {
+  width: 150px;
+  border: none;
+  background-color: teal;
+  border-radius: 8px;
+  padding: 8px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin: 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: white;
+}
+.registerLoginBtn {
+  width: 160px;
+  position: absolute;
+  top: 100px;
+  right: 30px;
+}
+.registerLoginBtn > a {
+  color: white;
+}
+@media screen and (max-width: 992px) {
+}
+@media screen and (max-width: 768px) {
+  .registerLoginBtn {
+    width: fit-content;
+    position: relative;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    margin-left: 60px;
+    bottom: 100px;
+    top: 0px;
+  }
+  .registerTitle {
+    font-size: 1.7rem;
+  }
+  .registerBtn,
+  .registerLoginBtn {
+    font-size: 0.8rem;
+  }
+}

@@ -1,0 +1,21 @@
+.errorPage {
+  height: calc(100vh - 22vh);
+  margin: 0px 20px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.errorPage > h1 {
+  width: fit-content;
+  color: rgb(236, 69, 69);
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+.errorPage > h4 {
+  width: fit-content;
+  margin-top: 20px;
+  font-size: 1rem;
+  font-weight: bold;
+}

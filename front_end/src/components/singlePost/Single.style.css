@@ -1,0 +1,160 @@
+.singleContainer {
+  flex: 9;
+  width: 100%;
+  padding: 20px;
+  margin: 0px 20px 10px 40px;
+}
+
+.single {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 10px;
+  align-items: center;
+  font-family: "Varela Round", sans-serif;
+}
+
+.singleImg {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.singleHedaing {
+  display: flex;
+  text-align: center;
+  font-size: 1.6rem;
+  width: 100%;
+  padding: 20px;
+  justify-content: space-between;
+}
+.singleTitle {
+  width: 100%;
+}
+.singleTitleInput {
+  font-size: 1.6rem;
+  width: 100%;
+  /* padding: 5px; */
+  text-align: center;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid lightgray;
+}
+.singleTitleInput:focus {
+  outline: none;
+}
+.singleTitleInput::placeholder {
+  font-family: "Varela Round", sans-serif;
+}
+.singleIcons {
+  width: 7%;
+  float: right;
+  display: flex;
+  margin-right: 10px;
+  font-size: 1rem;
+}
+.singleEditIcon {
+  color: teal;
+  cursor: pointer;
+}
+.singleDeleteIcon {
+  color: crimson;
+  cursor: pointer;
+}
+.singleAuthor {
+  display: flex;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  justify-content: space-between;
+}
+.singleAuthorName {
+  text-transform: capitalize;
+  text-align: start;
+  display: flex;
+  margin-left: 20px;
+  justify-content: center;
+  font-family: var(--descriptionFont);
+}
+.singleAuthorName h3 {
+  font-style: italic;
+  font-size: 1rem;
+  color: rgb(77, 60, 48);
+  cursor: pointer;
+  letter-spacing: 3px;
+}
+.singlePostDate {
+  text-align: end;
+  font-style: italic;
+  margin-right: 20px;
+  color: gray;
+  font-size: 0.8rem;
+}
+.singlePostDescription {
+  text-align: justify;
+  font-size: 0.8rem;
+  line-height: 25px;
+}
+.singlePostDescription::first-letter {
+  margin-left: 20px;
+  font-size: 30px;
+  font-weight: 900;
+  color: rgb(77, 60, 48);
+}
+.singlePostDescriptionInput {
+  text-align: justify;
+  font-size: 0.8rem;
+  line-height: 25px;
+  border: none;
+  outline: none;
+}
+.singlePostDescriptionInput::value {
+  font-family: "Varela Round", sans-serif;
+}
+.singlePostUpdateBtn {
+  border: none;
+  background-color: teal;
+  padding: 5px;
+  width: 100px;
+  color: white;
+  align-self: flex-end;
+  margin-top: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+@media screen and (max-width: 992px) {
+  .singleTitle {
+    font-size: 1.4rem;
+    margin-top: 10px;
+  }
+  .singleTitleInput {
+    font-size: 1.4rem;
+  }
+  .singleAuthorName h3 {
+    font-size: 0.8rem;
+  }
+  .singlePostDate {
+    font-size: 0.7rem;
+  }
+  .singlePostDescription {
+    font-size: 0.7rem;
+  }
+  .singlePostDescription::first-letter {
+    margin-left: 0px;
+  }
+  .singleEditIcon {
+    margin-right: 5px;
+    margin-left: -5px;
+  }
+  .singleDeleteIcon {
+    margin-left: 5px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .singleTitle {
+    font-size: 1.3rem;
+  }
+  .singleTitleInput {
+    font-size: 1.2rem;
+  }
+}

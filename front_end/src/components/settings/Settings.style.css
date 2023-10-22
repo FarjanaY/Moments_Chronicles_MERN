@@ -1,0 +1,106 @@
+.settings {
+  display: flex;
+  height: fit-content;
+}
+.settingsContainer {
+  flex: 9;
+  padding: 20px 50px;
+}
+.settingsTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.settingsTitleUpdate {
+  width: fit-content;
+  font-size: 1.8rem;
+  color: lightcoral;
+}
+.settingsTitleDelete {
+  width: fit-content;
+  font-size: 0.8rem;
+  color: red;
+  cursor: pointer;
+}
+.settingsForm {
+  display: flex;
+  flex-direction: column;
+}
+.settingsPP {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.settingsProfileImg {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.ppInput {
+  font-size: 1rem;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  border: 2px solid white;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding: 2px;
+  color: white;
+  font-weight: 500;
+  background-color: lightcoral;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.settingsForm > label {
+  font-size: 1rem;
+  margin-top: 20px;
+  font-weight: 600;
+}
+.settingsForm > input {
+  color: gray;
+  margin: 10px 0px;
+  height: 30px;
+  border: none;
+  border-bottom: 1px solid gray;
+}
+
+.settingsForm > input:focus {
+  outline: none;
+}
+.settingsSubmitBtn {
+  width: 130px;
+  align-self: center;
+  border: none;
+  color: white;
+  background-color: teal;
+  border-radius: 5px;
+  margin-top: 20px;
+  padding: 8px;
+  cursor: pointer;
+}
+.msg {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+}
+@media screen and (max-width: 992px) {
+  .settingsTitleUpdate {
+    font-size: 1.5rem;
+  }
+  .settingsForm > label {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .settingsTitleUpdate {
+    font-size: 1.4rem;
+  }
+  .settingsForm > label {
+    font-size: 0.9rem;
+  }
+}

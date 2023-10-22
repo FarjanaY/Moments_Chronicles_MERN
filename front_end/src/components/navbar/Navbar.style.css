@@ -1,0 +1,194 @@
+.navBar {
+  display: flex;
+  height: 9vh;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--headerFont);
+  margin: 5px 0px 5px 0px;
+  width: 100%;
+  padding-right: 20px;
+  background-color: white;
+}
+.navLogoContainer {
+  display: flex;
+  flex: 5;
+  padding-left: 15px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.navLogo {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: 2px solid gray;
+}
+.navLogoName {
+  margin-left: 10px;
+  text-transform: uppercase;
+  font-weight: 1000;
+  letter-spacing: 2px;
+  font-size: 1.15rem;
+}
+
+.menuBarIcon {
+  display: none;
+}
+.navItems {
+  flex: 7;
+  display: flex;
+}
+.navUl {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-right: 10px;
+  margin-left: 10px;
+  flex: 5;
+}
+.navList {
+  padding: 0px 5px;
+  margin: 0px;
+  cursor: pointer;
+  color: black;
+  font-weight: 500;
+}
+.navList:hover {
+  text-decoration: none;
+  color: rgb(92, 90, 90);
+  font-weight: 700;
+}
+.navImg {
+  display: flex;
+  flex: 2;
+  align-items: center;
+  margin-left: 10px;
+}
+.profileImg {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  object-fit: cover;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.searchIcon {
+  margin-right: 10px;
+  color: rgb(71, 70, 70);
+  align-items: center;
+  text-align: end;
+}
+
+@media screen and (max-width: 992px) {
+  .navLogo {
+    height: 25px;
+    width: 25px;
+  }
+  .navLogoName {
+    font-size: 1rem;
+  }
+  .navUl {
+    margin-left: 40px;
+  }
+  .navList {
+    margin: 10px;
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navBar {
+    display: block;
+  }
+  .navLogoContainer {
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    height: 10vh;
+    padding: 0px 15px;
+  }
+  .menuBarIcon {
+    display: block;
+    width: 25px;
+    font-size: 1.1rem;
+    text-align: right;
+  }
+  .menuBarIcon i {
+    color: rgb(109, 105, 105);
+  }
+  .navItems {
+    display: block;
+    position: fixed;
+    top: 70px;
+    left: 300px;
+    background-color: white;
+    width: 60%;
+    height: 75%;
+    padding: 10px;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s ease-in-out;
+    left: 105%;
+    border-radius: 7px;
+    box-shadow: -3px 3px 5px gray;
+  }
+  .menu {
+    left: 40%;
+  }
+  .navUl {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+  .navList {
+    width: fit-content;
+    padding-top: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-bottom: 1px solid gray;
+  }
+  .navList:hover {
+    text-decoration: none;
+  }
+  a:hover {
+    color: gray;
+  }
+
+  .navImg {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    
+    /* padding-left: 40%; */
+  }
+  .profileImg {
+    display: flex;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    /* margin-left: 45%; */
+    margin-top: 10px;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    position: relative;
+    /* align-self: center; */
+    left: 43%;
+  }
+  .searchIcon {
+    margin-top: 20px;
+    margin-left: 10px;
+    color: rgb(71, 70, 70);
+    align-items: center;
+    text-align: center;
+  }
+}

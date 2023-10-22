@@ -1,0 +1,38 @@
+.footer {
+  height: 11vh;
+  padding: 2px 5px;
+  padding-top: 5px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background-color: #e8eff5;
+ 
+  bottom: 0;
+}
+.footer > h3 {
+  font-weight: 700;
+  font-family: var(--italicFont);
+  color: black;
+  font-size: 0.8rem;
+}
+
+.footer > span {
+  color: black;
+  font-size: 0.6rem;
+  line-height: 20px;
+  font-weight: 600;
+}
+.footerIcons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+}
+.footerIcon {
+  width: 20px;
+  height: 20px;
+  margin:  5px;
+}
+.footerIconLink{
+  width: fit-content;
+}

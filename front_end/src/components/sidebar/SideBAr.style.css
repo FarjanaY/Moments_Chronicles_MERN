@@ -1,0 +1,67 @@
+.sideBarContainer {
+  flex: 3;
+  margin: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fdfbfb;
+}
+.sideBarItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sideBarTitle {
+  text-align: center;
+  width: 80%;
+  margin: 10px 0px;
+  line-height: 30px;
+  font-family: var(--headerFont);
+  font-size: 0.8rem;
+  font-weight: 1000;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+.sideBarItem > img {
+  margin-top: 10px;
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  border-radius: 7px;
+}
+.aboutMeDescription {
+  text-align: justify;
+  padding: 5px 30px;
+  padding-top: 20px;
+}
+.catagoriesList {
+  margin: 10px 20px;
+}
+.catagoriesListItem {
+  display: inline-block;
+  width: 50%;
+  padding: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+.sideBarIcons {
+  display: flex;
+  padding: 10px 30px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 250px;
+}
+.sideBarIcon {
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .sideBarContainer {
+    flex: 0;
+    display: none;
+  }
+}

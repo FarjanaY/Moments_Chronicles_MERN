@@ -1,0 +1,98 @@
+.logInContainer {
+  height: calc(100vh - 22vh);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("../assets/images/profile.jpg");
+  background-size: cover;
+}
+.logInTitle {
+  font-size: 2.3rem;
+  margin: 10px;
+  text-align: center;
+}
+.logInForm {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logInForm > label {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  width: fit-content;
+  margin-top: 15px;
+}
+.logInForm > input {
+  margin: 10px;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid gray;
+  width: fit-content;
+  padding: 5px 10px;
+  text-align: center;
+}
+.logInForm > input:focus {
+  outline: none;
+}
+
+.logInBtn,
+.logInRegisterBtn {
+  width: 150px;
+  border: none;
+  background-color: teal;
+  border-radius: 8px;
+  padding: 8px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin: 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: white;
+}
+
+.logInBtn:disabled {
+  cursor: not-allowed;
+  background-color: rgb(247, 155, 155);
+}
+.logInRegisterBtn {
+  width: 160px;
+  position: absolute;
+  top: 100px;
+  right: 30px;
+}
+.logInRegisterBtn > a {
+  color: rgb(255, 255, 255);
+}
+.logInRegisterBtn > a:hover {
+  color: white;
+}
+@media screen and (max-width: 768px) {
+  .logInTitle {
+    font-size: 1.7rem;
+  }
+  .logInForm > label {
+    font-size: 0.9rem;
+  }
+  .logInBtn {
+    width: 100px;
+  }
+  .logInRegisterBtn {
+    position: relative;
+    right: 0px;
+    align-self: center;
+    top: 0px;
+    width: 140px;
+  }
+  .logInBtn,
+  .logInRegisterBtn {
+    font-size: 0.8rem;
+  }
+}

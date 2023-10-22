@@ -1,0 +1,110 @@
+.writeContainer {
+  padding: 20px 50px;
+  margin-left: 150px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 22vh);
+}
+.writeImage {
+  width: 70vw;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.writeForm {
+  margin: 10px;
+  position: relative;
+  width: 70%;
+}
+.writeFormInput {
+  align-items: center;
+}
+
+.writeImgInput {
+  display: flex;
+  width: 100%;
+}
+
+.writeInputIcon {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid gray;
+  color: gray;
+  cursor: pointer;
+}
+.writeImgText {
+  font-weight: 500;
+  font-family: "Varela Round", sans-serif;
+  width: fit-content;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  color: gray;
+  font-size: 20px;
+}
+.writeFormNameInput {
+  font-size: 30px;
+  border: none;
+  margin-bottom: 20px;
+  font-family: "Varela Round", sans-serif;
+  width: 65vw;
+  text-transform: capitalize;
+  /* border-bottom: 1px solid gray; */
+}
+.writeFormNameInput:focus {
+  outline: none;
+}
+.writeTextArea {
+  font-size: 0.9rem;
+  border: none;
+}
+.writePublishBtn {
+  position: absolute;
+  top: 10px;
+
+  /* padding-right: 10px; */
+  width: 100px;
+  border: none;
+  left: 920px;
+  padding: 5px;
+  color: white;
+  background-color: teal;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.msg {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+}
+@media screen and (max-width: 992px) {
+  .writeContainer {
+    padding: 20px 50px;
+    margin-left: 80px;
+  }
+  .writePublishBtn {
+    position: relative;
+    left: 0px;
+  }
+  .writeFormNameInput {
+    font-size: 25px;
+  }
+  .writeTextArea {
+    font-size: 0.75rem;
+    border: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .writeContainer {
+    padding: 20px 50px;
+    margin-left: 1px;
+  }
+}
