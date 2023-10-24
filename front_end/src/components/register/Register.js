@@ -39,7 +39,7 @@ const Register = () => {
       //user registration using axios
       try {
         const response = await axios.post(
-          "http://localhost:8000/api/user/register",
+          "moments-chronicles-mern-backend.vercel.app/api/user/register",
           user
         );
         console.log(response);
