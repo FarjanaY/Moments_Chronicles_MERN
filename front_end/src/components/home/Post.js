@@ -8,7 +8,7 @@ import "./Post.style.css";
 //import post2 from "../assets/images/post2.jpg";
 
 const Post = ({ post }) => {
-  const publicFolder = "http://localhost:8000/images/";
+  const publicFolder = "moments-chronicles-mern-backend.vercel.app/images/";
   
   return (
     <div className="postContainer">
