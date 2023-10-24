@@ -19,7 +19,7 @@ const Settings = () => {
 
   const { user, dispatch } = useContext(Context);
 
-  const PF = "moments-chronicles-mern-backend.vercel.app/images/";
+  const PF = "https://moments-chronicles-mern-backend.vercel.app/images/";
 
   //form submit function for update profile
   const handleSubmit = async (e) => {
