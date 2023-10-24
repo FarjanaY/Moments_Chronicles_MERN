@@ -44,7 +44,7 @@ const Login = () => {
     } else {
       try {
         const response = await axios.post(
-          "http://localhost:8000/api/user/login",
+          "moments-chronicles-mern-backend.vercel.app/api/user/login",
           userLogin
         );
         dispatch({ type: "LOGIN_SUCCESS", payload: response.data });
