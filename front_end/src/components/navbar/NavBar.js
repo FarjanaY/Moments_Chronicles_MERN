@@ -10,7 +10,7 @@ const NavBar = () => {
   const { user, dispatch } = useContext(Context);
   const [showMenu, setShowMenu] = useState(false);
 
-  const PF = "moments-chronicles-mern-backend.vercel.app/images/";
+  const PF = "https://moments-chronicles-mern-backend.vercel.app/images/";
 
   //Log out handler
   const handleLogOut = () => {
