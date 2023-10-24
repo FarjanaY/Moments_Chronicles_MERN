@@ -60,15 +60,15 @@ app.get("/", (req, res) => {
   res.status(200).send("Welcome to Moments Chronicles");
 });
 
-// // 404 error route
-// app.use((req, res, next) => {
-//   res.status(404).send("404 Error...!");
-// });
+// 404 error route
+app.use((req, res, next) => {
+  res.status(404).send("404 Error...!");
+});
 
-// // Server Error
-// app.use((err, req, res, next) => {
-//   res.status(500).send("Something broke, Server Error...!");
-// });
+// Server Error
+app.use((err, req, res, next) => {
+  res.status(500).send("Something broke, Server Error...!");
+});
 
 //Port
 const port = process.env.PORT || 5000;
