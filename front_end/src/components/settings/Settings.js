@@ -40,14 +40,14 @@ const Settings = () => {
 
       //profile photo update
       try {
-        await axios.post("/uploads", data);
+        await axios.post("/api/uploads", data);
       } catch (error) {
         console.log(error);
       }
     }
     try {
       const response = await axios.put(
-        "/user/update/" + user.others._id,
+        "/api/user/update/" + user.others._id,
         updatedUser
       );
       console.log(response);
