@@ -38,5 +38,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "https://moments-chronicles-mern-backend.vercel.app/api"
+  "proxy": "https://moments-chronicles-mern-back-end.onrender.com/api"
 }
