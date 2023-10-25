@@ -49,7 +49,7 @@ const Write = () => {
         newPost.photo = filename;
         try {
           // eslint-disable-next-line no-unused-vars
-          const response = await axios.post("/uploads", data);
+          const response = await axios.post("/api/uploads", data);
           //setImgUrl(response.data.imageUrl);
           // console.log("RESPONSE");
           // console.log(response);
@@ -63,7 +63,7 @@ const Write = () => {
       }
       try {
         // eslint-disable-next-line no-unused-vars
-        const response = await axios.post("/post/add", newPost);
+        const response = await axios.post("/api/post/add", newPost);
         const id = response.data.savePost._id;
 
         //switch to single post
