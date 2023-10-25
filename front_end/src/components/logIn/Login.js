@@ -44,7 +44,7 @@ const Login = () => {
     } else {
       try {
         const response = await axios.post(
-          "https://moments-chronicles-mern-backend.vercel.app/api/user/login",
+          "https://moments-chronicles-mern-back-end.onrender.com/api/user/login",
           userLogin
         );
         dispatch({ type: "LOGIN_SUCCESS", payload: response.data });
