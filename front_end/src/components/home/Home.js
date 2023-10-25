@@ -15,7 +15,7 @@ const Home = () => {
 
   useEffect(() => {
     const fetchPost = async () => {
-      const response = await axios.get("/api/post" + search);
+      const response = await axios.get("https://moments-chronicles-mern-back-end.onrender.com/api/post" + search);
       const allPosts = response.data.posts;
       setPosts(allPosts);
     };
