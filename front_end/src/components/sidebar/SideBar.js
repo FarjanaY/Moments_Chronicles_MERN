@@ -14,7 +14,7 @@ const SideBar = () => {
   //catagory data fetching
   useEffect(() => {
     const fectchCatagories = async () => {
-      const response = await axios.get("/api/catagory");
+      const response = await axios.get("https://moments-chronicles-mern-back-end.onrender.com/api/catagory");
       setCatagories(response.data.catagories);
     };
     fectchCatagories();
