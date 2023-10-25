@@ -23,7 +23,7 @@ const Single = () => {
   const [updateMode, setUpdateMode] = useState(false);
 
   //image path
-  const PF = "https://moments-chronicles-mern-backend.vercel.app/images/";
+  const PF = "https://moments-chronicles-mern-back-end.onrender.com/images/";
   console.log("post.photo");
   console.log(post.photo);
 
