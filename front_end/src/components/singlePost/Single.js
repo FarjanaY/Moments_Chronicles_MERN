@@ -29,7 +29,7 @@ const Single = () => {
 
   useEffect(() => {
     const singleData = async () => {
-      const response = await axios.get("/api/post/" + singleId);
+      const response = await axios.get("https://moments-chronicles-mern-back-end.onrender.com/api/post/" + singleId);
       const singlePost = response.data.post;
       console.log(singlePost);
       setPost(singlePost);
@@ -42,7 +42,7 @@ const Single = () => {
   //Update functionality for single post update
   const handleUpdate = async () => {
     try {
-      const response = await axios.put(`/api/post/update/${post._id}`, {
+      const response = await axios.put(`https://moments-chronicles-mern-back-end.onrender.com/api/post/update/${post._id}`, {
         // _id: post._id,
         username: user.others.username,
         title: title,
@@ -64,7 +64,7 @@ const Single = () => {
   //Delete FUntionality for post delete
   const handleDelete = async () => {
     try {
-      const response = await axios.delete(`/api/post/delete/${post._id}`, {
+      const response = await axios.delete(`https://moments-chronicles-mern-back-end.onrender.com/api/post/delete/${post._id}`, {
         data: { username: user.others.username },
       });
       setSuccessMsg("Post Deleted Successfully");
