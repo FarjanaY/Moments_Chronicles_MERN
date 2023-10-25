@@ -40,14 +40,14 @@ const Settings = () => {
 
       //profile photo update
       try {
-        await axios.post("/api/uploads", data);
+        await axios.post("https://moments-chronicles-mern-back-end.onrender.com/api/uploads", data);
       } catch (error) {
         console.log(error);
       }
     }
     try {
       const response = await axios.put(
-        "/api/user/update/" + user.others._id,
+        "https://moments-chronicles-mern-back-end.onrender.com/api/user/update/" + user.others._id,
         updatedUser
       );
       console.log(response);
